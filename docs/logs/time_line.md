@@ -1,2 +1,7 @@
 2025-12-05 14:43 Pinia Setup: [Pinia Setup with Persistence and Auto-imports](./tree/pinia-setup.md)
 2025-12-05 17:28 Docs Workflow: [Initialize Documentation Workflow](./tree/init-docs-workflow.md)
+2025-12-05 18:00 Registry Protocol: [Initialize Networked Registry Protocol](./tree/init-registry-protocol.md)
+2025-12-05 18:30 Protocol Update: [Nuxt 4 Alignment & pnpm Constraints](./tree/update-nuxt4-protocol.md)
+2025-12-05 18:45 Learning Update: [Nuxt 4 Architecture Confirmation](./tree/learn-nuxt4.md)
+2025-12-05 19:00 Scaffold Impl: [Basic Web Application Scaffold](./tree/impl-scaffold.md)
+2025-12-05 19:15 Bug Fix: [Fix Demo Page Type Error](./tree/fix-demo-type-error.md)
