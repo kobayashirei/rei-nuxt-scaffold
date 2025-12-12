@@ -13,22 +13,54 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     'pinia-plugin-persistedstate/nuxt',
     '@nuxtjs/i18n',
+    '@nuxtjs/tailwindcss'
   ],
+  css: ['~/assets/css/tailwind.css'],
   // plugins: [
   //   './types/**'
   // ],
+  hooks: {
+    'build:before': async () => {
+      // await import('./hooks/gen-css')
+    }
+  },
+  app: {
+    head: {
+      meta: [
+      // <meta name="viewport" content="width=device-width, initial-scale=1">
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      ],
+      script: [
+      // <script src="https://myawesome-lib.js"></script>
+        // { src: 'https://awesome-lib.js' },
+      ],
+      link: [
+      // <link rel="stylesheet" href="https://myawesome-lib.css">
+        // { rel: 'stylesheet', href: 'https://awesome-lib.css' },
+      ],
+      // please note that this is an area that is likely to change
+      style: [
+      // <style>:root { color: red }</style>
+        // { textContent: ':root { color: red }' },
+      ],
+      noscript: [
+      // <noscript>JavaScript is required</noscript>
+        { textContent: 'JavaScript is required' },
+      ],
+    },
+  },
   i18n: {
     locales: [
       { code: 'en', file: 'en.json', name: 'English' },
       { code: 'zh', file: 'zh.json', name: '中文' }
     ],
     // lazy: true,
-    langDir: './locales',
+    langDir: 'locales',
     defaultLocale: 'zh',
     strategy: 'prefix_except_default', // /zh for Chinese, / for English
   },
   imports: {
-    dirs: ['config', 'types', 'constants'],
+    dirs: ['types', 'constants'],
     // commentsDebug: true
   },
   pinia: {

@@ -1,4 +1,8 @@
 {
+  "main": {
+    "title": "Arishi Rei's Blog",
+    "description": "一个基于 Nuxt 4 的项目脚手架，采用拆分上下文架构。"
+  },
   "nav": {
     "home": "首页",
     "blog": "博客",

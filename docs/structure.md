@@ -26,7 +26,7 @@
 
 ### Internationalization (i18n)
 - **Module**: `@nuxtjs/i18n`
-- **Location**: `app/locales/`
+- **Location**: `i18n/locales/`
 - **Resources**:
   - `en.json`: English translations.
   - `zh.json`: Chinese translations.
@@ -40,6 +40,12 @@
     - **Network**:
       - *Used By*: `app/pages/demo.vue`
       - *Persistence*: Enabled
+
+### Styling (TailwindCSS)
+- **Module**: `@nuxtjs/tailwindcss`
+- **Configuration**: `tailwind.config.ts`
+- **Assets**: `app/assets/css/tailwind.css`
+- **Demo Page**: `app/pages/tailwind.vue`
 
 ### Blog System
 - **Spec**: [Blog System Spec](./specs/blog-system.md)

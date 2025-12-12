@@ -1,14 +1,14 @@
 <script setup lang="ts">
-const { siteConfig } = useConfigx()
+const { siteConfig, headerConfig, testConfig } = useConfigs()
 const { localePath, locale, setLocale } = useContext()
 </script>
 
 <template>
   <header class="app-header">
     <nav>
-      <NuxtLink :to="localePath('/')" class="brand">Nuxt Scaffold</NuxtLink>
+      <NuxtLink :to="localePath(headerConfig.navbar[0]?.path as string)" class="brand">Nuxt Scaffold</NuxtLink>
       <div class="links">
-        <NuxtLink v-for="(item, index) in siteConfig.router.navbar" :key="index" :to="localePath(item.path)">{{ $t(item.title) }}</NuxtLink>
+        <NuxtLink v-for="(item, index) in headerConfig.navbar" :key="index" :to="localePath(item.path)">{{ $t(item.title) }}</NuxtLink>
       </div>
       <div class="lang-switch">
         <button @click="setLocale('en')" :class="{ active: locale === 'en' }">EN</button>

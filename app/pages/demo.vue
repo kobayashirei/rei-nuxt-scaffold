@@ -1,4 +1,5 @@
 <script setup lang="ts">
+const { siteConfig, headerConfig, testConfig } = useConfigs()
 // Fetch data from server API
 const { data: serverInfo, refresh } = await useFetch('/api/info')
 </script>
@@ -12,9 +13,9 @@ const { data: serverInfo, refresh } = await useFetch('/api/info')
       <section class="demo-card">
         <h2>{{ $t('demo.pinia_title') }}</h2>
         <div class="counter-box">
-          <p class="count">{{ $t('demo.value') }}: </p>
-          <p class="double">{{ $t('demo.double') }}: </p>
-          <button @click="" class="btn-inc"></button>
+          <p class="count">{{ $t('demo.value') }}: {{ testConfig.count }}</p>
+          <p class="double">{{ $t('demo.double') }}: {{ testConfig.count * 2 }}</p>
+          <button @click="testConfig.count++" class="btn-inc">+</button>
           <p class="hint">{{ $t('demo.hint') }}</p>
         </div>
       </section>

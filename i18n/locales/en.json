@@ -1,4 +1,8 @@
 {
+  "main": {
+    "title": "Arishi Rei's Blog",
+    "description": "A Nuxt 4 scaffold with split context architecture."
+  },
   "nav": {
     "home": "Home",
     "blog": "Blog",
