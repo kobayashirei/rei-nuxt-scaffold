@@ -21,6 +21,9 @@ logs
 # Local env files
 .env
 .env.*
+
 !.env.example
 
 !docs/logs
+
+posts/blog/update-logs.md

@@ -81,6 +81,8 @@
 - **Components**:
   - `app/components/AppHeader.vue`: Main Navigation.
   - `app/components/AppFooter.vue`: Site Footer.
+  - `app/components/PageLoading.vue`: Global routing transition loader.
+  - `app/components/custom/Card.vue`: Reusable card component (Demo).
 - **Pages**:
   - `app/pages/index.vue` (Home)
   - `app/pages/about.vue` (About)

@@ -28,6 +28,18 @@ const { data: serverInfo, refresh } = await useFetch('/api/info')
           <button @click="() => refresh()" class="btn-refresh">{{ $t('demo.refresh') }}</button>
         </div>
       </section>
+
+      <!-- Custom Component Example -->
+      <CustomCard>
+        <template #header>
+          {{ $t('demo.custom_component') }}
+        </template>
+        <p>{{ $t('demo.custom_desc') }}</p>
+        <p class="code-example">app/components/custom/Card.vue -> &lt;CustomCard&gt;</p>
+        <template #footer>
+          {{ $t('demo.custom_footer') }}
+        </template>
+      </CustomCard>
     </div>
   </div>
 </template>
@@ -78,5 +90,14 @@ const { data: serverInfo, refresh } = await useFetch('/api/info')
   margin-top: 1rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
+}
+.code-example {
+  background: #f4f4f4;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: #d63384;
 }
 </style>

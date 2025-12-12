@@ -18,7 +18,7 @@ export const headerConfig = {
     },
     {
       path: '/tailwind',
-      title: 'nav.about'
+      title: 'nav.tailwind'
     }
   ]
 }

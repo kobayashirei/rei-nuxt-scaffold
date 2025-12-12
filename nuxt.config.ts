@@ -15,6 +15,17 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss'
   ],
+  // tailwindcss: {
+  //   config: {
+  //     content: [
+  //       './components/**/*.{vue,js,ts}',
+  //       './layouts/**/*.vue',
+  //       './pages/**/*.vue',
+  //       './plugins/**/*.{js,ts}',
+  //       './nuxt.config.{js,ts}',
+  //     ],
+  //   },
+  // },
   css: ['~/assets/css/tailwind.css'],
   // plugins: [
   //   './types/**'
@@ -24,6 +35,7 @@ export default defineNuxtConfig({
       // await import('./hooks/gen-css')
     }
   },
+  ssr: true,
   app: {
     head: {
       meta: [
@@ -41,7 +53,7 @@ export default defineNuxtConfig({
       // please note that this is an area that is likely to change
       style: [
       // <style>:root { color: red }</style>
-        // { textContent: ':root { color: red }' },
+        // { textContent: ':root { color: red } #top-progress { box-shadow: 0 0 8px #38bdf8; }' },
       ],
       noscript: [
       // <noscript>JavaScript is required</noscript>
@@ -61,6 +73,7 @@ export default defineNuxtConfig({
   },
   imports: {
     dirs: ['types', 'constants'],
+    
     // commentsDebug: true
   },
   pinia: {

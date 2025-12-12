@@ -11,3 +11,4 @@
 2025-12-06 01:10 Refactor: [Types, Config, i18n Implementation](./tree/refactor-types-config-i18n.md)
 2025-12-06 02:05 Fix: [i18n Config & Auto-Import Conflicts](./tree/config-i18n-fixes.md)
 2025-12-12 20:05 Tailwind: [Nuxt 4 TailwindCSS Setup & Demo](./tree/nuxt-tailwind-setup.md)
+2025-12-13 14:15 Loading & Components: [Custom Components & Route Loading](./tree/impl-loading-custom-components.md)

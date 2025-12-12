@@ -7,7 +7,8 @@
     "home": "Home",
     "blog": "Blog",
     "demo": "Demo",
-    "about": "About"
+    "about": "About",
+    "tailwind": "Tailwind"
   },
   "blog": {
     "title": "Blog Posts",
@@ -41,7 +42,10 @@
     "increment": "+ Increment",
     "hint": "Refresh the page, this value will persist.",
     "server_title": "Server API Fetch",
-    "refresh": "Refresh Data"
+    "refresh": "Refresh Data",
+    "custom_component": "Custom Component Demo",
+    "custom_desc": "This is an auto-imported component example. Located at app/components/custom/Card.vue, recognized as CustomCard component.",
+    "custom_footer": "Footer Slot"
   },
   "about": {
     "title": "About Project",

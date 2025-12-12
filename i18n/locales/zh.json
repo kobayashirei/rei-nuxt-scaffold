@@ -7,7 +7,8 @@
     "home": "首页",
     "blog": "博客",
     "demo": "演示",
-    "about": "关于"
+    "about": "关于",
+    "tailwind": "Tailwind"
   },
   "blog": {
     "title": "博客文章",
@@ -41,7 +42,10 @@
     "increment": "+ 增加",
     "hint": "刷新页面，该值将会保留。",
     "server_title": "服务端 API 获取",
-    "refresh": "刷新数据"
+    "refresh": "刷新数据",
+    "custom_component": "自定义组件演示",
+    "custom_desc": "这是一个自动导入的组件示例。文件位于 app/components/custom/Card.vue，Nuxt 自动识别为 CustomCard 组件。",
+    "custom_footer": "这是 Footer 插槽"
   },
   "about": {
     "title": "关于项目",
